@@ -4,170 +4,197 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- For Social Media Icons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <header>
-            <h4>Youssef Nader</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <br>
-        <hr>
-        <section class="hero-section">
-            <section class="left-section">
-                <h4>Hello it's Me</h3>
-                <h1>Youssef Nader</h1>
-                <h3>And I'm a Full-stack Developer</h3>
-                <p>Professional in Front-end and Back-end technologies (inclucing libraries and frameworks)</p>
-                <button>Download CV</button>
-            </section>
-            <section class="right-section">
-                <img src="Figma-removebg-preview.png"  alt="this a developer photo"
-                 width="200" height="200">
-            </section>
-        </section>
-        <br>
-        <hr>
-        <section class="about-section">
-            <h2>About Me</h2>
-            <section class="left-section">
-                <img src="programmer-doing-his-job-flat-design.png" alt="this is a programmer photo" 
-                width="200" height="200">
-            </section>
-            <section class="right-section">
-                <h3>Full-stack Developer</h3>
-                <p>Professional in front-end technologies like HTML5, CSS3, JavaScript
-                    (including libraries and frameworks such as React.)
-                </p>
-                <p>Experience with server-side languages and frameworks 
-                    (Node.js, Python/Django)
-                </p>
-                <Button>See More</Button>
-            </section>
-        </section>
-        <br>
-        <hr>
-        <section class="services">
-            <h2>Our Services</h2>
-            <article class="ui-ux">
-                <h3>UI-UX Designer</h3>
-                <p>UX makes intefraces Useful</p>
-                <p>UI makes intefraces Beautiful</p>
-                <button>Read More</button>
-                <br><br>
-            </article>
-            <article class="web-dev">
-                <h3>Web Development</h3>
-                <p> refers to a term that includes all the processes 
-                    involved in developing a web project or website
-                </p>
-                <button>Read More</button>
-                <br><br>
-            </article>
-            <article class="digital-mk">
-                <h3>Digital Marketing</h3>
-                <p>is the use of websites, apps, mobile devices to
-                    promote and sell products
-                </p>
-                <button>Read More</button>
-            </article>
-        </section>
-        <br>
-        <hr>
-        <section class="projects">
-            <h2>Our Projects</h2>
-            <section class="photos">
-                <img src="Portfolio photos/unsplash__Fx34KeqIEw.png"  alt="project 1"
-                 width="350" height="200">
-                 <img src="Portfolio photos/unsplash_6sAl6aQ4OWI.png" alt="project 2"
-                 width="350" height="200">
-                 <img src="Portfolio photos/unsplash_8qEB0fTe9Vw.png" alt="project 3"
-                 width="350" height="200">
-                 <img src="Portfolio photos/unsplash_IKUYGCFmfw4.png" alt="project 4"
-                 width="350" height="200">
-                 <img src="Portfolio photos/unsplash_LJ9KY8pIH3E.png" alt="project 5"
-                 width="350" height="200">
-                 <img src="Portfolio photos/unsplash_SrewPUfo2c0.png" alt="project 6"
-                 width="350" height="200">
-            </section>
-        </section>
-        <br>
-        <hr>
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <!-- When Send Data Is Disappeared In IP Address -->
-            <form method="post">
-                <input type="text" placeholder="First Name" required name="First Name">
-                <br><br>
-                <input type="text" placeholder="Last Name" required name="Last Name">
-                <br><br>
-                <input type="tel" placeholder="Mobile" required name="Mobile">
-                <br><br>
-                <input type="email" placeholder="Email" required name="Email">
-                <br><br>
-                <textarea placeholder="Your Message" rows="10" cols="50" required name="Message"></textarea>
-                <br><br>
-                <input type="submit" value="Send">
-                <input type="reset" value="Reset">
-            </form>
-        </section>
-        <br>
-        <hr>
-        <footer>
-            <h2>Youssef Nader</h2>
-            <section class="links">
-                <section class="home">
+            <div class="container">
+                <div class="name">
+                    <h1 class="first">Youssef</h1>
+                    <h1 class="second">Nader</h1>
+                </div>
+                <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Help</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="hero-section" >
+            <div class="container">
+                <section class="left-section">
+                    <p>Hello it's Me</p>
+                    <p>Youssef Nader</p>
+                    <p>And I'm a <span>Full-stack Developer</span></p>
+                    <p>Professional in Front-end and Back-end technologies (inclucing libraries and frameworks)</p>
+                    <button><a href="Youssef Nader CV 2.pdf" target="_blank">Download CV</a></button>
                 </section>
-                <section class="about">
+                <section class="right-section">
+                    <img src="Images/Developer photos/Figma-removebg-preview.png"  alt="this a developer photo">
+                </section>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2>About <span>Me</span></h2>
+                <div class="inner-container">
+                    <section class="left-section">
+                        <img src="Images/Developer photos/programmer-doing-his-job-flat-design.png" alt="this is a programmer photo" 
+                        width="200" height="200">
+                    </section>
+                    <section class="right-section">
+                        <p>Full-stack Developer</p>
+                        <p>Professional in front-end technologies like HTML5, CSS3, JavaScript
+                            (including libraries and frameworks such as React.)
+                        </p>
+                        <p>Experience with server-side languages and frameworks 
+                            (Node.js, Python/Django)
+                        </p>
+                        <Button>See More</Button>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="services-section" id="services">
+            <div class="container">
+                <h2>Our <span>Services</span></h2>
+                <div class="inner-container">
+                    <article class="ui-ux">
+                        <img src="Images/Icons/4964030_art_brush_color_creative_design_icon.png"  alt="">
+                        <h3>UI-UX Designer</h3>
+                        <p>UX makes intefraces </p>
+                        <span>Useful</span>
+                        <p>UI makes intefraces</p>
+                        <span>Beautiful</span>
+                        <button>Read More</button>
+                    </article>
+                    <article class="web-dev">
+                        <img src="Images/Icons/7695977_global_internet_technology_business_world_icon.png" alt="">
+                        <h3>Web Development</h3>
+                        <p> refers to a term that includes all the processes 
+                        involved in developing a <span>web</span> project or website
+                        </p>
+                        <button>Read More</button>
+                    </article>
+                    <article class="digital-mk">
+                        <img src="Images/Icons/2907928_browser_business_digital_marketing_online_icon.png" alt="">
+                        <h3>Digital Marketing</h3>
+                        <p>is the use of <span>websites, apps, mobile devices to</span>
+                            promote and sell products
+                        </p>
+                        <button>Read More</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <h2>Our <span>Projects</span</h2>
+                <div class="inner-container">
+                    <section class="photos">
+                        <img src="Images/Project photos/unsplash_6sAl6aQ4OWI.png" alt="project 1">
+                        <img src="Images/Project photos/unsplash_8qEB0fTe9Vw.png" alt="project 2">
+                        <img src="Images/Project photos/unsplash__Fx34KeqIEw.png" alt="project 3">
+                        <img src="Images/Project photos/unsplash_IKUYGCFmfw4.png" alt="project 4">
+                        <img src="Images/Project photos/unsplash_LJ9KY8pIH3E.png" alt="project 5">
+                        <img src="Images/Project photos/unsplash_SrewPUfo2c0.png" alt="project 6">
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2>Contact <span>Me</span></h2>
+                <div class="inner-container">
+                    <!-- When Send Data Is Disappeared In IP Address -->
+                    <form method="post">
+                        <div class="flex1">
+                            <input type="text" placeholder="First Name" required name="First Name">
+                            <input type="text" placeholder="Last Name" required name="Last Name">    
+                        </div>
+                        <div class="flex2">
+                            <input type="tel" placeholder="Mobile" required name="Mobile">
+                            <input type="email" placeholder="Email" required name="Email">    
+                        </div>
+                        <textarea placeholder="Your Message" required name="Message"></textarea>
+                        <div class="buttons">
+                            <input type="submit" value="Send">
+                            <input type="reset" value="Reset">    
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="name">
+                    <h2 class="first">Youssef</h2>
+                    <h2 class="second">Nader</h2>
+                </div>
+                <section class="links">
+                    <section class="home">
+                        <ul>
+                            <li><a class="first" href="#">Home</a></li>
+                            <li><a href="#">About</a>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </section>
+                    <section class="about">
+                        <ul>
+                            <li><a class="first" href="#">About</a></li>
+                            <li><a href="#">Mission</a></li>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">Team</a></li>
+                        </ul>
+                    </section>
+                    <section class="services">
+                        <ul>
+                            <li><a class="first" href="#">Services</a></li>
+                            <li><a href="#">Offering</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </section>
+                    <section class="contact">
+                        <ul>
+                            <li><a class="first" href="#">Contact</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Feedback</a></li>
+                            <li><a href="#">Locations</a></li>
+                        </ul>
+                    </section>
+                </section>
+            </div>    
+            <div class="second-container">
+                <P class="copy-rights">&copy; 2024 All Rights Reserved</P>
+                <section class="social-media">
+                    <p>CONNECT WITH US</p>
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Mission</a></li>
-                        <li><a href="#">Vision</a></li>
-                        <li><a href="#">Team</a></li>
+                        <li><a href="https://www.facebook.com/yosef.elsherif.1?mibextid=LQQJ4d" 
+                            target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/youssef-nader-845503282?utm_source=share&utm_
+                            campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/yosefnader?igsh=MWdrbjZuMW5hdnI0NA%3D%3D&utm_source=qr" 
+                            target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        </li>
+                        <li><a href="mailto:ynader982@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a></li>
                     </ul>
                 </section>
-                <section class="services">
-                    <ul>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Offering</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Pricing</a></li>
-                    </ul>
-                </section>
-                <section class="contact">
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Media</a></li>
-                        <li><a href="#">Feedback</a></li>
-                        <li><a href="#">Locations</a></li>
-                    </ul>
-                </section>
-            </section>
-            <hr>
-            <section class="social-media">
-                <p>CONNECT WITH US</p>
-                <ul>
-                    <li><a href="#" target="_blank">Behance</a></li>
-                    <li><a href="#" target="_blank">Facebook</a></li>
-                    <li><a href="#" target="_blank">linkedIn</a></li>
-                    <li><a href="#" target="_blank">Instagram</a></li>
-                    <li><a href="#" target="_blank">Twitter</a></li>
-                </ul>
-            </section>
-            <P>&copy; 2024 All Rights Reserved</P>
+            </div>
         </footer>
     </body>
 </html>
