@@ -1,4 +1,5 @@
 * {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -465,7 +466,7 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     border-radius: 25px;
-    line-height: 1.6;
+    line-height: 1.6;   
 }
 .services-section .inner-container article img {
     width: 50px;
@@ -674,6 +675,9 @@ nav ul li a:hover {
     .projects-section {
         height: auto;
     }
+    .projects-section .container {
+        width: 100%;
+    }
     .projects-section .container h2 {
         font-size: 45px;
     }
@@ -745,6 +749,7 @@ nav ul li a:hover {
     border-radius: 15px;
     font-size: 16px;
     transition: .2s;
+    color: #d7d7d7;
 }
 .contact-section .container .inner-container .flex1 input,
 .contact-section .container .inner-container .flex2 input {
@@ -752,6 +757,7 @@ nav ul li a:hover {
 }
 .contact-section .container .inner-container .flex1 input:focus,
 .contact-section .container .inner-container .flex2 input:focus {
+    color: white;
     width: 350px;
 }
 .contact-section .container .inner-container .flex1 input:nth-child(1)::placeholder {
@@ -768,6 +774,7 @@ nav ul li a:hover {
 }
 .contact-section .container .inner-container textarea:focus {
     width: 650px;
+    color: white;
 }
 .contact-section .container .inner-container .buttons {
     width: 35%;
