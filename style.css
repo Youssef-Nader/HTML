@@ -743,7 +743,6 @@ nav ul li a:hover {
 .contact-section .container .inner-container .flex2 input,
 .contact-section .container .inner-container textarea {
     padding: 15px 10px;
-    outline: none;
     border: none;
     background-color: var(--secondary-background);
     border-radius: 15px;
@@ -759,6 +758,8 @@ nav ul li a:hover {
 .contact-section .container .inner-container .flex2 input:focus {
     color: white;
     width: 350px;
+    outline: 2px solid var(--main-textColor);
+    outline-offset: 2px;
 }
 .contact-section .container .inner-container .flex1 input:nth-child(1)::placeholder {
     color: #E3E3E3;
@@ -775,6 +776,8 @@ nav ul li a:hover {
 .contact-section .container .inner-container textarea:focus {
     width: 650px;
     color: white;
+    outline: 2px solid var(--main-textColor);
+    outline-offset: 2px;
 }
 .contact-section .container .inner-container .buttons {
     width: 35%;
@@ -829,6 +832,8 @@ nav ul li a:hover {
     .contact-section .container .inner-container .flex2 input:focus,
     .contact-section .container .inner-container textarea:focus {
         width: 95%;
+        outline: 2px solid var(--main-textColor);
+        outline-offset: 2px;
     }
     .contact-section .container .inner-container .buttons {
         width: 80%;
@@ -868,6 +873,8 @@ nav ul li a:hover {
     .contact-section .container .inner-container .flex2 input:focus,
     .contact-section .container .inner-container textarea:focus {
         width: 70%;
+        outline: 2px solid var(--main-textColor);
+        outline-offset: 2px;
     }
     .contact-section .container .inner-container .buttons {
         width: 65%;
@@ -1212,4 +1219,17 @@ footer .second-container .social-media div a:hover {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
+}
+
+/* Accessibility: Visually hide elements but keep them available for screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
