@@ -125,14 +125,19 @@
                     <!-- When Send Data Is Disappeared In IP Address -->
                     <form method="post">
                         <div class="flex1">
-                            <input type="text" placeholder="First Name" required name="First Name">
-                            <input type="text" placeholder="Last Name" required name="Last Name">    
+                            <label for="first-name" class="sr-only">First Name</label>
+                            <input type="text" id="first-name" placeholder="First Name" required name="First Name">
+                            <label for="last-name" class="sr-only">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Last Name" required name="Last Name">
                         </div>
                         <div class="flex2">
-                            <input type="tel" placeholder="Mobile" required name="Mobile">
-                            <input type="email" placeholder="Email" required name="Email">    
+                            <label for="mobile" class="sr-only">Mobile</label>
+                            <input type="tel" id="mobile" placeholder="Mobile" required name="Mobile">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" id="email" placeholder="Email" required name="Email">
                         </div>
-                        <textarea placeholder="Your Message" required name="Message"></textarea>
+                        <label for="message" class="sr-only">Your Message</label>
+                        <textarea id="message" placeholder="Your Message" required name="Message"></textarea>
                         <div class="buttons">
                             <input type="submit" value="Send">
                             <input type="reset" value="Reset">    
@@ -188,15 +193,15 @@
                     <p>CONNECT WITH US</p>
                     <div>
                         <a href="https://github.com/Youssef-Nader" 
-                            target="_blank"><ion-icon name="logo-github"></ion-icon>
+                            target="_blank" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon>
                         </a>
                         <a href="https://www.linkedin.com/in/youssef-nader-845503282?utm_source=share&utm_
-                            campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><ion-icon name="logo-linkedin"></ion-icon>
+                            campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon>
                         </a>
                         <a href="https://www.instagram.com/yosefnader?igsh=MWdrbjZuMW5hdnI0NA%3D%3D&utm_source=qr" 
-                            target="_blank"><ion-icon name="logo-instagram"></ion-icon>
+                            target="_blank" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon>
                         </a>
-                        <a href="mailto:ynader982@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+                        <a href="mailto:ynader982@gmail.com" target="_blank" aria-label="Email"><ion-icon name="mail-outline"></ion-icon></a>
                     </div>
                 </section>
             </div>
