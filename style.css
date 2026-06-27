@@ -5,6 +5,21 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+:focus-visible {
+    outline: 2px solid var(--main-textColor);
+    outline-offset: 2px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
 :root {
     --main-background: #151925;
     --secondary-background: #323846;
