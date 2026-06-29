@@ -1213,3 +1213,21 @@ footer .second-container .social-media div a:hover {
         padding: 0 20px;
     }
 }
+
+/* Accessibility Utilities */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+:focus-visible {
+    outline: 2px solid var(--main-textColor);
+    outline-offset: 2px;
+}
