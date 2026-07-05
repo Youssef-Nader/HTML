@@ -1,0 +1,3 @@
+## 2026-07-05 - Accessibility and Focus Visibility
+**Learning:** Placeholders are not a substitute for labels. Screen readers require explicit `<label>` elements (which can be visually hidden using `.sr-only`) for proper form field identification. Additionally, `outline: none` should never be used without providing a fallback focus state, preferably using `:focus-visible` to maintain visual clarity for keyboard users without affecting mouse interactions.
+**Action:** Always include `.sr-only` labels for form inputs and implement a global `:focus-visible` style while removing any instances of `outline: none`.
