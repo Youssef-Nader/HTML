@@ -14,6 +14,21 @@
     color: black;
     background-color: gray;
 }
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+:focus-visible {
+    outline: 2px solid var(--main-textColor);
+    outline-offset: 2px;
+}
 /* Start Style The Container Of Each Section */
 header .container,
 .hero-section .container,
@@ -743,7 +758,6 @@ nav ul li a:hover {
 .contact-section .container .inner-container .flex2 input,
 .contact-section .container .inner-container textarea {
     padding: 15px 10px;
-    outline: none;
     border: none;
     background-color: var(--secondary-background);
     border-radius: 15px;
